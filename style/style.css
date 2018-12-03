@@ -54,18 +54,11 @@ header::after{
 	font-family: "Nino Mkhedruli", sans-serif;
 	margin-top: 15px;
 }
-.w-i-do h2{
-	margin-top: 63px;
-	font-family: "Glaho WEB";
-	text-align: center;
-	font-size: 24px;
-	margin-bottom: 10px;
-}
 .line1{
 	width: 93px;
 	height: 1px;
 	background-color: #000000;
-	margin: 0 auto 60px auto;
+	margin: 10px auto 60px auto;
 }
 .line2{
 	position: absolute;
@@ -74,39 +67,76 @@ header::after{
 	width: 25px;
 	height: 2px;
 	background-color: #B8EDF8;
-	/*margin: 14px auto 39px auto;*/
+}
+.what-i-do-heading{
+	margin-top: 59px;
+	font-family: "Glaho WEB";
+	text-align: center;
+	font-size: 24px;
+	margin-bottom: 10px;
+	padding: 2px 0 4px 0;
 }
 .customDiv{
 	width: 268px;
 	height: 300px;
 	border:1px solid #666666;
 	margin-right: 23px;
-
-}
-.customDiv h3{
-	font-family: "Glaho WEB",sans-serif;
-	font-size: 18px;
-	text-align: center;
-	margin-bottom: 18px;
-}
-.customDiv p{
-	font-family: "Nino Mkhedruli";
-	font-size: 16.49px;
-	text-align: center;
 }
 #idea-img{
 	width: 48px;
-	margin: 32px 110px 39px 110px;
+	margin: 32px 110px 0 110px;
 }
 #design-img{
 	width: 81px;
-	margin:29px 91px 39px 91px;
+	margin:29px 91px 0 91px;
 }
 #programming-img{
 	width:65px; 
-	margin: 40px 100px 22px 99px;
+	margin: 40px 100px 11px 99px;
 }
 #support-img{
 	width: 83px;
-	margin: 30px 92px 11px 89px;
+	margin: 25px 92px 0 89px;
+}
+.what-i-do-news{
+	margin-top: 55px;
+	margin-bottom: 47px;
+	text-align: center;
+}
+.what-i-do-news h3{
+	font-family: "Glaho WEB",sans-serif;
+	font-weight: 700;
+	font-size: 18px;
+	margin-bottom: 18px;
+}
+.what-i-do-news p{
+	font-family: "Nino Mkhedruli";
+	font-size: 16.49px;
+}
+.my-works-heading{
+	margin-top: 58px;
+	margin-bottom: 10px;
+	padding:3px 0;
+	text-align: center;
+	font-family: "Glaho WEB",sans-serif;
+	font-size: 24px;
+	background
+}
+.my-works-image{
+	border:2px solid #B8EDF8;
+	height: 200px;
+	overflow: hidden;
+    margin-right: 24px;
+	margin-bottom: 30px;
+	width: 30% !important;
+	padding: 0 !important;
+}
+.my-works-image:last-child{
+	margin-right: 0;
+}
+.my-works-image a:hover{
+	background-color: rgba(184,237,248,0.4);
+}
+.row-margins{
+	margin-left: 113px !important;
 }
