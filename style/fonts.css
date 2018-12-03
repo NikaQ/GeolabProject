@@ -1,0 +1,24 @@
+@font-face {
+    font-family: 'Nino Mkhedruli';
+    src: url('../fonts/BPGNinoMkhedruliBook.eot');
+    src: url('../fonts/BPGNinoMkhedruliBook.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/BPGNinoMkhedruliBook.woff2') format('woff2'),
+         url('../fonts/BPGNinoMkhedruliBook.woff') format('woff'),
+         url('../fonts/BPGNinoMkhedruliBook.ttf') format('truetype'),
+         url('../fonts/BPGNinoMkhedruliBook.svg#BPGNinoMkhedruliBook') format('svg');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Glaho WEB';
+    src: url('../fonts/BPGGlahoWEBCaps.eot');
+    src: url('../fonts/BPGGlahoWEBCaps.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/BPGGlahoWEBCaps.woff2') format('woff2'),
+         url('../fonts/BPGGlahoWEBCaps.woff') format('woff'),
+         url('../fonts/BPGGlahoWEBCaps.ttf') format('truetype'),
+         url('../fonts/BPGGlahoWEBCaps.svg#BPGGlahoWEBCaps') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+

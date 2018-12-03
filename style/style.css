@@ -1,0 +1,112 @@
+.d-inline-block{
+	display: inline-block;
+}
+.logo{
+	margin:35px auto 30px 35px;
+	width:161px;
+	float: left;
+}
+header::after{
+	content: "";
+	clear: both;
+	display: block;
+}
+.nav-ul{
+	margin: 40px auto;
+	float: right;
+}
+.nav-ul li{
+	font-size: 20px;
+	line-height: 45px;
+}
+.nav-ul li a{
+	color:#000000;
+	font-family: "Glaho WEB",sans-serif;
+	margin-right: 35px;
+}
+.nav-ul li a:hover{
+	color:#B8EDF8;
+	text-decoration: none;
+}
+.image-content{
+	position: relative;
+	z-index: -1;
+}
+.image-content img{
+	width: 100%;	
+}
+.image-text{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	text-align: center;
+}
+.image-text h1{
+	color:#FFFFFF;
+	font-size: 40px;
+	font-family: "Glaho WEB",sans-serif;
+	margin-top: 50px;
+}
+.image-text h6{
+	color: #FFFFFF;
+	font-size: 30px;
+	font-family: "Nino Mkhedruli", sans-serif;
+	margin-top: 15px;
+}
+.w-i-do h2{
+	margin-top: 63px;
+	font-family: "Glaho WEB";
+	text-align: center;
+	font-size: 24px;
+	margin-bottom: 10px;
+}
+.line1{
+	width: 93px;
+	height: 1px;
+	background-color: #000000;
+	margin: 0 auto 60px auto;
+}
+.line2{
+	position: absolute;
+	top: 121px;
+	left: 137px;
+	width: 25px;
+	height: 2px;
+	background-color: #B8EDF8;
+	/*margin: 14px auto 39px auto;*/
+}
+.customDiv{
+	width: 268px;
+	height: 300px;
+	border:1px solid #666666;
+	margin-right: 23px;
+
+}
+.customDiv h3{
+	font-family: "Glaho WEB",sans-serif;
+	font-size: 18px;
+	text-align: center;
+	margin-bottom: 18px;
+}
+.customDiv p{
+	font-family: "Nino Mkhedruli";
+	font-size: 16.49px;
+	text-align: center;
+}
+#idea-img{
+	width: 48px;
+	margin: 32px 110px 39px 110px;
+}
+#design-img{
+	width: 81px;
+	margin:29px 91px 39px 91px;
+}
+#programming-img{
+	width:65px; 
+	margin: 40px 100px 22px 99px;
+}
+#support-img{
+	width: 83px;
+	margin: 30px 92px 11px 89px;
+}
