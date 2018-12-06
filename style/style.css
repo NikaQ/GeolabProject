@@ -96,14 +96,6 @@ header::after{
 .image-content{
 	position: relative;
 	z-index: -1;
-	width: 100%;
-	height:600px;
-	background-image: url("../img/main.jpg");
-	background-repeat: no-repeat;
-	background-position:center;
-	background-size: cover;
-	
-
 }
 .image-text{
 	position: absolute;
@@ -135,11 +127,13 @@ header::after{
 	padding: 2px 0 4px 0;
 	margin:59px 0 10px 0;
 }
-.customDiv{
+.w-i-do-column{
 	height: 300px;
 	border:1px solid #666666;
 	margin-bottom: 20px;
 }
+
+/*  Icons   */
 #idea-img{
 	width: 48px;
 	margin: 32px 110px 0 110px;
@@ -157,7 +151,8 @@ header::after{
 	margin: 25px 92px 0 89px;
 }
 .what-i-do-news{
-	margin-top: 55px;	text-align: center;
+	margin-top: 55px;	
+	text-align: center;
 }
 .what-i-do-news h3{
 	font-family: "Glaho WEB",sans-serif;
@@ -176,54 +171,25 @@ header::after{
 	text-align: center;
 	font-family: "Glaho WEB",sans-serif;
 	font-size: 24px;
-	background
 }
-/*.my-works-image{
-	border:2px solid #B8EDF8;
-	height: 200px;
-	overflow: hidden;
-    margin-right: 24px;
-	margin-bottom: 30px;
-	width: 30% !important;
-	padding: 0 !important;
-}
-.my-works-image:last-child{
-	margin-right: 0;
-}
-.my-works-image a:hover{
-	background-color: rgba(184,237,248,0.4);
-}
-.row-margins{
-	margin-left: 119px !important;
-}*/
 #my-works{
 	margin-bottom: 58px;
 }
-.rowO{
-	margin-left: 8%;
-}
-.column{
+.my-works-column{
 	position: relative;
-	display: inline-block;
 	height: 200px;
+	width: 360px;
 	overflow: hidden;
 	border:2px solid #B8EDF8;
-	margin-right: 24px;
+	margin-right: 20px;
 	margin-bottom: 30px;
 }
-@media screen and (max-width: 1315px){
-	.rowO .column{
-		float: left;
-	}
+.mywork-img{
+	display: block;
+    margin-left: auto;
 }
-@media screen and (max-width: 992px){
-	
-	.cont .rowO{
-		margin-left: 10%;
-	}
-	.rowO .column{
-		float: left;
-	}
+.my-works-column:last-child{
+	margin-right: 0;
 }
 .overlay{
 	position: absolute;
@@ -256,15 +222,15 @@ header::after{
 	font-family: "Glaho WEB";
 	color: #FFFFFF;
 }
-.column:hover .overlay{
+.my-works-column:hover .overlay{
 	height: 100%;
 }
+/*--------------End of My Work-----------*/
 
+/*--------------About Me-----------------*/
 #about-me{
 	/*padding: 60px 0 65px 60px;*/
-	padding-left: 8.4%;
-	padding-top: 60px;
-	padding-bottom: 65px;
+	padding:60px 113px 65px 113px;
 	background-color: #F1F1F1;
 }
 #about-me::after{
@@ -272,14 +238,17 @@ header::after{
 	display: block;
 	clear: both;
 }
+.about-me-img{
+	box-shadow: 30px 30px #B8EDF8;
+}
 .about-me-img-div{
 	float: left;
 	width: 370px;
+	height: 330px;
 }
 .about-me-text-div{
 	float: right;
 	width: 560px;
-
 }
 .about-me-text-div h2{
 	font-family: "Glaho WEB",sans-serif;
@@ -287,19 +256,17 @@ header::after{
 	color:#000000;
 	margin-bottom: 13px;
 }
-
 .about-me-text-div p{
 	font-family: "Nino Mkhedruli",sans-serif;
-	font-size: 14px;
+	font-size: 16px;
 	color:#666666;
-	margin-right: 122px;
 }
 .about-me-text-div p:first-child{
 	margin-bottom: 24px;
+	margin-top: 60px;
 }
-.about-me-img{
-	box-shadow: 30px 30px #B8EDF8;
-}
+/*------End Of About Me-------------*/
+
 #contact{
 	width: 100%;
 	background-color: #B8EDF8;
@@ -308,15 +275,18 @@ header::after{
 .contact-heading{
 	position: relative;
 	text-align: center;
-	padding:3px auto;
+/*	padding:3px auto;*/
 	margin-bottom: 10px; 
 }
 .contact-heading h2{
 	font-family: "Glaho WEB";
 	font-size: 24px;
 }
+.form1{
+	width: 953px;
+}
 .form1 form{
-	margin-left: 30%;
+	margin-left: 400px;
 }
 .form1 h5{
 	font-family: "Nino Mkhedruli",sans-serif;
@@ -332,21 +302,25 @@ input[type=text],input[type=email],textarea{
 	border: 2px solid black;
 	box-shadow: none;
 }
-textarea{
-	margin-bottom: 0;
+.heading-button-div{
+	margin-top: 14px;
+	display: block;
+	width: 554px;
 }
 input[type=submit]{
 	float:right;
-	color:#7EC4CE;
-	background-color: #FFFFFF;
-	margin-top: 14px;
-	margin-right: 390px;
+	color:#FFFFFF;
+	background-color: #7EC4CE;;
 	height: 36px;
 	padding: 8px 10px 9px 11px;
 	font-family: "Glaho WEB",sans-serif;
 	font-size: 14px;
 	border:1px solid #7EC4CE;
 	cursor: pointer;
+}
+input[type=submit]:hover{
+	background-color:white;
+	color: #7EC4CE;
 }
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
     font-family: "Nino Mkhedruli",sans-serif;
@@ -360,8 +334,12 @@ input[type=submit]{
   	padding-left: 25px;
   	padding-top: 10px;
 }
+/*--------------End of Contact---------*/
+
+/*--------------Footer-----------------*/
 footer{
 	width: 100%;
+	height: 100px;
 	background-color: #313332;
 	font-size: 14px;
 	font-family: "Nino Mkhedruli",sans-serif;
@@ -375,30 +353,42 @@ footer h6{
 footer img{
 	margin-top: 33px;
 	float: right;
-	margin-top: 33px;
-	width: 161px;
+	width: 161px;	
 }
+/*-----------------End of Footer------------*/
+
 @media screen and (max-width:1200px){
-	.customDiv{
+	.w-i-do-column{
 		width: 100%;
 	}
-	.customDiv #idea-img{
+	.w-i-do-column #idea-img{
 		margin: 32px 110px 0 200px;
 	}
-	.customDiv #design-img{
+	.w-i-do-column #design-img{
 		margin: 32px 110px 0 180px;
 	}
-	.customDiv #programming-img{
+	.w-i-do-column #programming-img{
 		margin: 32px 110px 0 190px;
 	}
-	.customDiv #support-img{
+	.w-i-do-column #support-img{
 		margin: 32px 110px 0 180px;
 	}
-	.customDiv .line2{
+	.w-i-do-column .line2{
 		left: 227px;
 	}
+	#about-me{
+		padding: 60px 70px 95px 30px;
+	}
+	.about-me-text-div p{
+		font-size: 14px;
+	}
+	.form1 form{
+		margin-left: 219px;
+		padding-bottom: 108px;
+	}
+
 }
-@media screen and (max-width:992px){
+@media screen and (max-width:991px){
 	.header-nav a{
 		display: none;
 	}
@@ -418,52 +408,97 @@ footer img{
 	.image-text h6{
 		font-size: 28px;
 	}
-	.customDiv{
+	.w-i-do-column{
 		width: 100%;
 	}
-	.customDiv #idea-img{
+	.w-i-do-column #idea-img{
 		margin: 32px 110px 0 141px;
 	}
-	.customDiv #design-img{
+	.w-i-do-column #design-img{
 		margin: 32px 110px 0 120px;
 	}
-	.customDiv #programming-img{
+	.w-i-do-column #programming-img{
 		margin: 32px 110px 0 130px;
 	}
-	.customDiv #support-img{
+	.w-i-do-column #support-img{
 		margin: 32px 110px 0 120px;
 	}
-	.customDiv .line2{
+	.w-i-do-column .line2{
 		left: 165px;
+	}
+	.my-works-column{
+		width: 340px;
+	}
+	.about-me-img{
+		width: 646px;
+		height: 576px;
+		box-shadow: 50px 50px #B8EDF8;
+	}
+	.about-me-text-div{
+		margin-top: 112px;
+	}
+	.form1 form{
+		margin-left: 39px;
+	}
+	input[type=text],input[type=email],textarea{
+		width:687px ;
+		margin-bottom: 19px;
+	}
+	.heading-button-div{
+		width: 686px;
 	}
 }
 @media screen and (max-width:768px){
-	.image-content{
-		background-size: contain;
-	}
 	.image-text h1{
 		font-size: 24px;
 	}
 	.image-text h6{
 		font-size: 20px;
 	}
-	.customDiv{
+	.w-i-do-column{
 		width: 100%;
 	}
-	.customDiv #idea-img{
+	.w-i-do-column #idea-img{
 		margin: 32px 110px 0 229px;
 	}
-	.customDiv #design-img{
+	.w-i-do-column #design-img{
 		margin: 32px 110px 0 210px;
 	}
-	.customDiv #programming-img{
+	.w-i-do-column #programming-img{
 		margin: 32px 110px 0 223px;
 	}
-	.customDiv #support-img{
+	.w-i-do-column #support-img{
 		margin: 32px 110px 0 210px;
 	}
-	.customDiv .line2{
+	.w-i-do-column .line2{
 		left: 256px;
 	}
-
+	.my-works-column{
+		width: 527px;
+		height: 282px;
+	}
+	.my-works-column img{
+		width: 100%;
+	}
+	.about-me-img{
+		width: 477px;
+		height: 425px;
+		box-shadow: 38px 38px #B8EDF8;
+	}
+	.about-me-text-div{
+		margin-top: 128px;
+	}
+	.about-me-text-div p:first-child{
+		margin-top: 56px;
+	}
+	.form1 form{
+		margin-left: 30px;
+	}
+	input[type=text],input[type=email],textarea{
+		width:516px;
+		margin-bottom: 27px;
+	}
+	.heading-button-div{
+		width:516px;
+	}
 }
