@@ -1,58 +1,11 @@
-.d-inline-block{
-	display: inline-block;
+body{
+	width: 100%;
+	overflow-x: hidden;
 }
-.logo{
-	margin:35px auto 30px 35px;
-	width:161px;
-	float: left;
-}
-header::after{
-	content: "";
+
+/*------------GENERAL CLASSES---------*/
+.clear{
 	clear: both;
-	display: block;
-}
-.nav-ul{
-	margin: 40px auto;
-	float: right;
-}
-.nav-ul li{
-	font-size: 20px;
-	line-height: 45px;
-}
-.nav-ul li a{
-	color:#000000;
-	font-family: "Glaho WEB",sans-serif;
-	margin-right: 35px;
-}
-.nav-ul li a:hover{
-	color:#B8EDF8;
-	text-decoration: none;
-}
-.image-content{
-	position: relative;
-	z-index: -1;
-}
-.image-content img{
-	width: 100%;	
-}
-.image-text{
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%,-50%);
-	text-align: center;
-}
-.image-text h1{
-	color:#FFFFFF;
-	font-size: 40px;
-	font-family: "Glaho WEB",sans-serif;
-	margin-top: 50px;
-}
-.image-text h6{
-	color: #FFFFFF;
-	font-size: 30px;
-	font-family: "Nino Mkhedruli", sans-serif;
-	margin-top: 15px;
 }
 .line1{
 	width: 93px;
@@ -68,19 +21,116 @@ header::after{
 	height: 2px;
 	background-color: #B8EDF8;
 }
-.what-i-do-heading{
-	margin-top: 59px;
+.line3{
+	height: 2px;
+	width: 93px;
+	background-color: #000000;
+	margin-bottom: 60px;
+}
+/*-------END OF GENERAL CLASSES----*/
+
+/*-------HEADER START---------*/
+header{
+	overflow: hidden;
+	padding-left: 35px;
+}
+header::after{
+	content: "";
+	clear: both;
+	display: block;
+}
+.logo{
+	margin:35px 0 30px;
+	width:161px;
+	float: left;
+}
+.header-nav{
+	background-color: white;
+	margin: 40px auto;
+	float: right;
+}
+.header-nav a{
+	display: inline-block;
+	color:#000000;
+	text-align: center;
+	font-family: "Glaho WEB",sans-serif;
+	font-size: 20px;
+	margin-right: 35px;
+}
+.header-nav a:hover{
+	color:#B8EDF8;
+	text-decoration: none;
+}
+.header-nav .icon{
+	display: none;
+}
+.responsive-nav{
+	display: none;
+	position: absolute;
+	top:110px;
+	left: 0;
+	width: 100%;
+	z-index: 3;
+	padding: 128px 0 420px 0;
+	font-family: "Glaho WEB",sans-serif;
+	font-size: 20px;
+	background-color: #B8EDF8;
+}
+.responsive-nav a{
+	float: none;
+   	display: block;
+   	text-align: center;
+   	margin-bottom: 54px;
+   	font-family: "Glaho WEB",sans-serif;
+	font-size: 20px;
+	margin-right: 35px;
+	color:black;
+}
+.responsive-nav a:hover{
+	text-decoration: none;
+	color: white;
+}
+/*--------END OF HEADER----------*/
+
+/*--------IMAGE CONTENT----------*/
+.image-content{
+	position: relative;
+	z-index: -1;
+}
+.image-text{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	text-align: center;
+	width: 100%;
+}
+.image-text h1{
+	color:#FFFFFF;
+	font-size: 40px;
+	font-family: "Glaho WEB",sans-serif;
+	margin-top: 70px;
+}
+.image-text h6{
+	color: #FFFFFF;
+	font-size: 30px;
+	font-family: "Nino Mkhedruli", sans-serif;
+	margin-top: 15px;
+}
+/*------------End Of Image Content-------*/
+
+/*------------What I Do------------------*/
+.what-i-do-heading h2{
 	font-family: "Glaho WEB";
 	text-align: center;
 	font-size: 24px;
-	margin-bottom: 10px;
 	padding: 2px 0 4px 0;
+	margin:59px 0 10px 0;
 }
 .customDiv{
-	width: 268px;
 	height: 300px;
 	border:1px solid #666666;
-	margin-right: 23px;
+	margin-bottom: 20px;
 }
 #idea-img{
 	width: 48px;
@@ -99,9 +149,7 @@ header::after{
 	margin: 25px 92px 0 89px;
 }
 .what-i-do-news{
-	margin-top: 55px;
-	margin-bottom: 47px;
-	text-align: center;
+	margin-top: 55px;	text-align: center;
 }
 .what-i-do-news h3{
 	font-family: "Glaho WEB",sans-serif;
@@ -122,7 +170,7 @@ header::after{
 	font-size: 24px;
 	background
 }
-.my-works-image{
+/*.my-works-image{
 	border:2px solid #B8EDF8;
 	height: 200px;
 	overflow: hidden;
@@ -138,5 +186,273 @@ header::after{
 	background-color: rgba(184,237,248,0.4);
 }
 .row-margins{
-	margin-left: 113px !important;
+	margin-left: 119px !important;
+}*/
+#my-works{
+	margin-bottom: 58px;
+}
+.rowO{
+	margin-left: 8%;
+}
+.column{
+	position: relative;
+	display: inline-block;
+	height: 200px;
+	overflow: hidden;
+	border:2px solid #B8EDF8;
+	margin-right: 24px;
+	margin-bottom: 30px;
+}
+@media screen and (max-width: 1315px){
+	.rowO .column{
+		float: left;
+	}
+}
+@media screen and (max-width: 992px){
+	
+	.cont .rowO{
+		margin-left: 10%;
+	}
+	.rowO .column{
+		float: left;
+	}
+}
+.overlay{
+	position: absolute;
+	overflow: hidden;
+	top: 0;
+  	left: 0;
+  	right: 0;
+  	background-color: rgba(184,237,248,0.8);
+  	width: 100%;
+  	height: 0;
+  	transition: .5s ease;
+  	text-align: center; 	
+}
+.overlay img{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 46px;
+	height: 44px;
+	margin:0 auto;
+}
+.overlay h3{
+	position: absolute;
+	top: 67%;
+	left: 50%;
+	transform: translateX(-50%);
+	white-space: nowrap;
+	font-size: 18px;
+	font-family: "Glaho WEB";
+	color: #FFFFFF;
+}
+.column:hover .overlay{
+	height: 100%;
+}
+
+#about-me{
+	/*padding: 60px 0 65px 60px;*/
+	padding-left: 8.4%;
+	padding-top: 60px;
+	padding-bottom: 65px;
+	background-color: #F1F1F1;
+}
+#about-me::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+.about-me-img-div{
+	float: left;
+	width: 370px;
+}
+.about-me-text-div{
+	float: right;
+	width: 560px;
+
+}
+.about-me-text-div h2{
+	font-family: "Glaho WEB",sans-serif;
+	font-size: 24px;
+	color:#000000;
+	margin-bottom: 13px;
+}
+
+.about-me-text-div p{
+	font-family: "Nino Mkhedruli",sans-serif;
+	font-size: 14px;
+	color:#666666;
+	margin-right: 122px;
+}
+.about-me-text-div p:first-child{
+	margin-bottom: 24px;
+}
+.about-me-img{
+	box-shadow: 30px 30px #B8EDF8;
+}
+#contact{
+	width: 100%;
+	background-color: #B8EDF8;
+	padding: 60px 0 107px 0;
+}
+.contact-heading{
+	position: relative;
+	text-align: center;
+	padding:3px auto;
+	margin-bottom: 10px; 
+}
+.contact-heading h2{
+	font-family: "Glaho WEB";
+	font-size: 24px;
+}
+.form1 form{
+	margin-left: 30%;
+}
+.form1 h5{
+	font-family: "Nino Mkhedruli",sans-serif;
+	font-size: 14px;
+	color:#666666;
+	margin-top: 23px;
+	float: left;
+}
+input[type=text],input[type=email],textarea{
+	width: 554px;
+	display: block;
+	margin-bottom: 19px;
+	border: 2px solid black;
+	box-shadow: none;
+}
+textarea{
+	margin-bottom: 0;
+}
+input[type=submit]{
+	float:right;
+	color:#7EC4CE;
+	background-color: #FFFFFF;
+	margin-top: 14px;
+	margin-right: 390px;
+	height: 36px;
+	padding: 8px 10px 9px 11px;
+	font-family: "Glaho WEB",sans-serif;
+	font-size: 14px;
+	border:1px solid #7EC4CE;
+	cursor: pointer;
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    font-family: "Nino Mkhedruli",sans-serif;
+    font-size: 14px;
+    padding-left: 25px;
+    padding-top: 10px;
+}
+::-ms-input-placeholder { /* Microsoft Edge */
+    font-family: "Nino Mkhedruli",sans-serif;
+    font-size: 14px;
+  	padding-left: 25px;
+  	padding-top: 10px;
+}
+footer{
+	width: 100%;
+	background-color: #313332;
+	font-size: 14px;
+	font-family: "Nino Mkhedruli",sans-serif;
+	color:#FFFFFF;
+	padding: 0 36px 30px 35px;
+}
+footer h6{
+	margin-top: 50px;
+	float: left;
+}
+footer img{
+	margin-top: 33px;
+	float: right;
+	margin-top: 33px;
+	width: 161px;
+}
+@media screen and (max-width:1200px){
+	.customDiv{
+		width: 100%;
+	}
+	.customDiv #idea-img{
+		margin: 32px 110px 0 200px;
+	}
+	.customDiv #design-img{
+		margin: 32px 110px 0 180px;
+	}
+	.customDiv #programming-img{
+		margin: 32px 110px 0 190px;
+	}
+	.customDiv #support-img{
+		margin: 32px 110px 0 180px;
+	}
+	.customDiv .line2{
+		left: 227px;
+	}
+}
+@media screen and (max-width:992px){
+	.header-nav a{
+		display: none;
+	}
+	.icon-div .icon{
+		float: right;
+		display: block;
+		color: #B8EDF8;
+		width: 35px;
+	}
+	.about-me .about-me-text-div{
+		width: 400px;
+		margin-left: 80px;
+	}
+	.image-text h1{
+		font-size: 34px;
+	}
+	.image-text h6{
+		font-size: 28px;
+	}
+	.customDiv{
+		width: 100%;
+	}
+	.customDiv #idea-img{
+		margin: 32px 110px 0 141px;
+	}
+	.customDiv #design-img{
+		margin: 32px 110px 0 120px;
+	}
+	.customDiv #programming-img{
+		margin: 32px 110px 0 130px;
+	}
+	.customDiv #support-img{
+		margin: 32px 110px 0 120px;
+	}
+	.customDiv .line2{
+		left: 165px;
+	}
+}
+@media screen and (max-width:768px){
+	.image-text h1{
+		font-size: 24px;
+	}
+	.image-text h6{
+		font-size: 20px;
+	}
+	.customDiv{
+		width: 100%;
+	}
+	.customDiv #idea-img{
+		margin: 32px 110px 0 229px;
+	}
+	.customDiv #design-img{
+		margin: 32px 110px 0 210px;
+	}
+	.customDiv #programming-img{
+		margin: 32px 110px 0 223px;
+	}
+	.customDiv #support-img{
+		margin: 32px 110px 0 210px;
+	}
+	.customDiv .line2{
+		left: 256px;
+	}
+
 }

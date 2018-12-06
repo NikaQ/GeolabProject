@@ -2,117 +2,105 @@
 <html>
 <head>
 	<title>AtomWeb</title>
-	<link rel="stylesheet" type="text/css" href="style/style.css">
+	<meta charset="utf-8"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="style/fonts.css">
 	<link rel="stylesheet" type="text/css" href="style/reset.css">
-	<!--  Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-	<!-- Optional theme -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-
-
-	<!-- Latest compiled and minified JavaScript -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> 
+	<link rel="stylesheet" type="text/css" href="style/style.css">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+	<!-- Jquery Version 3.3.1 -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	
 
 </head>
 <body>
 	<header id="main">
 		<a href="index.html">
-			<img class="logo" src="img/logo.svg">
+			<img class="logo" src="img/logoBlack.svg">
 		</a>
-		<nav>
-			<ul class="nav-ul">
-				<li class="d-inline-block">
-					<a href="index.html">მთავარი</a>
-				</li>
-				<li class="d-inline-block">
-					<a href="#what-i-do">რას ვაკეთებ</a>
-				</li>
-				<li class="d-inline-block">
-					<a href="#my-works">ნამუშევრები</a>
-				</li>
-				<li class="d-inline-block">
-					<a href="#about-me">ჩემ შესახებ</a>
-				</li>
-				<li class="d-inline-block">
-					<a href="#contact">კონტაქტი</a>
-				</li>
-			</ul>
+		<nav class="header-nav">
+			<a href="index.html">მთავარი</a>
+			<a href="#what-i-do">რას ვაკეთებ</a>
+			<a href="#my-works">ნამუშევრები</a>
+			<a href="#about-me">ჩემ შესახებ</a>
+			<a href="#contact">კონტაქტი</a>
+			<div class="icon-div">
+				<a href="#" class="icon iconopen">
+					<img id="icon-open" src="img/open.svg">
+				</a>
+			</div>	
+			<div class="icon-div">
+				<a href="#" class="icon iconclose">
+					<img id="icon-close" src="img/close.svg" style="display: none;">
+				</a>
+			</div>
 		</nav>
+		<nav class="responsive-nav">
+			<a href="index.html">მთავარი</a>
+			<a href="#what-i-do">რას ვაკეთებ</a>
+			<a href="#my-works">ნამუშევრები</a>
+			<a href="#about-me">ჩემ შესახებ</a>
+			<a href="#contact">კონტაქტი</a>
+		</nav>
+		<script type="text/javascript" src="js/navToggle.js"></script>
 	</header>
+	
 	<section>
 		<div class="image-content">
- 			<img src="img/main.jpg"> 
+ 			<img class="img-fluid" src="img/main.jpg"> 
  			<div class="image-text">
 				<h1>ვებ დიზაინი და პროგრამირება</h1>
-				<h6>სახელი გვარი</h6>
+				<h6>ნიკა ქვათაძე</h6>
 			</div>
 		</div>
 	</section>
+
 	<section id="what-i-do">
 		<div class="what-i-do-heading">
 			<h2>რას ვაკეთებ</h2>
 		</div>
 		<div class="line1">
-		</div>	
-		
-		<!-- Grids -->
+		</div>
+		<!-- Bootstrap Grids -->
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-3">
+				<div class="col-xl-3 col-md-6">
 					<div class="customDiv">
-						<ul>
-							<li>
-								<img id="idea-img" src="img/idea.svg">
-							</li>
-							<li class="line2"></li>
-						</ul>
+						<img id="idea-img" src="img/idea.svg">
+						<div class="line2"></div>
 						<div class="what-i-do-news">
 								<h3>იდეა</h3>
 								<p>ლორემ იპსუმ მოსაქმე დოკუმენტური ბღავილი გავშეშდები გველი დაიღვარა ხაზებს</p>
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-3">
+				<div class="col-xl-3 col-md-6">
 					<div class="customDiv">
-						<ul>
-							<li>
-								<img id="design-img" src="img/design.svg">
-							</li>
-							<li class="line2"></li>
-						</ul>
+						<img id="design-img" src="img/design.svg">
+						<div class="line2"></div>
 						<div class="what-i-do-news">
 								<h3>დიზაინი</h3>
 								<p>ლორემ იპსუმ მოსაქმე დოკუმენტური ბღავილი გავშეშდები გველი დაიღვარა ხაზებს</p>
 						</div>
 					</div>
 				</div>	
-				<div class="col-lg-3">
+				<div class="col-xl-3 col-md-6">
 					<div class="customDiv">
-						<ul>
-							<li>
-								<img id="programming-img" src="img/programming.svg">
-							</li>
-							<li class="line2">
-							</li>
-						</ul>
+						<img id="programming-img" src="img/programming.svg">
+						<div class="line2"></div>
 						<div class="what-i-do-news">
 								<h3>პროგრამირება</h3>
 								<p>ლორემ იპსუმ მოსაქმე დოკუმენტური ბღავილი გავშეშდები გველი დაიღვარა ხაზებს</p>
 						</div>
 					</div>
 				</div>	
-				<div class="col-lg-3">
+				<div class="col-xl-3 col-md-6">
 					<div class="customDiv">
-						<ul>
-							<li>
-								<img id="support-img" src="img/support.svg">
-							</li>
-							<li class="line2">
-								
-							</li>
-						</ul>
+						<img id="support-img" src="img/support.svg">
+						<div class="line2"></div>
 						<div class="what-i-do-news">
 								<h3>მხარდაჭერა</h3>
 								<p>ლორემ იპსუმ მოსაქმე დოკუმენტური ბღავილი გავშეშდები გველი დაიღვარა ხაზებს</p>
@@ -129,57 +117,102 @@
 		</div>
 		<div class="line1">
 		</div>	
-
-		
-		<!-- Grids -->
-		<div class="container-fluid container-width">
-			<div class="row row-margins">
-				<div class="col-lg-3 my-works-image ">
+		<div class="cont">
+			<div class="rowO">
+				<div class="column">
+					<img class="img-responsive"src="img/mywork1.jpg">
 					<a href="#">
-						<img src="img/mywork1.jpg">
+						<div class="overlay">
+							<img src="img/hover.svg">
+							<h3>ვებ სტუდიოს ვებგვერდი</h3>
+						</div>
 					</a>
 				</div>
-				<div class="col-lg-3 my-works-image">
+				<div class="column">
+					<img src="img/mywork2.jpg">
 					<a href="#">
-						<img src="img/mywork2.jpg">
+						<div class="overlay">
+							<img src="img/hover.svg">
+							<h3>ვებ სტუდიოს ვებგვერდი</h3>
+						</div>
 					</a>
 				</div>
-				<div class="my-works-image col-lg-3">
+				<div class="column">
+					<img class="img-responsive" src="img/mywork3.jpg">
 					<a href="#">
-						<img src="img/mywork3.jpg">
-					</a>
-				</div><!-- 
-			--></div>
-			<div class="row row-margins">
-				<div class="my-works-image col-lg-3">
-					<a href="#">
-						<img src="img/mywork1.jpg">
+						<div class="overlay">
+							<img src="img/hover.svg">
+							<h3>ვებ სტუდიოს ვებგვერდი</h3>
+						</div>
 					</a>
 				</div>
-				<div class="my-works-image col-lg-3">
+			</div>
+			<div class="rowO">
+				<div class="column">
+					<img class="img-responsive" src="img/mywork1.jpg">
 					<a href="#">
-						<img src="img/mywork2.jpg">
+						<div class="overlay">
+							<img src="img/hover.svg">
+							<h3>ვებ სტუდიოს ვებგვერდი</h3>
+						</div>
 					</a>
 				</div>
-				<div class="my-works-image col-lg-3">
+				<div class="column">
+					<img class="img-responsive" src="img/mywork2.jpg">
 					<a href="#">
-						<img src="img/mywork3.jpg">
+						<div class="overlay">
+							<img src="img/hover.svg">
+							<h3>ვებ სტუდიოს ვებგვერდი</h3>
+						</div>
+					</a>
+				</div>
+				<div class="column">
+					<img class="img-responsive" src="img/mywork3.jpg">
+					<a href="#">
+						<div class="overlay">
+							<img src="img/hover.svg">
+							<h3>ვებ სტუდიოს ვებგვერდი</h3>	
+						</div>
 					</a>
 				</div>
 			</div>
 		</div>
+		<div class="clear"></div>
 	</section>
 
 	<section id="about-me">
-		
+			<div class="about-me-img-div">
+				<img class="about-me-img" src="img/aboutme.jpg">
+			</div>
+			<article class="about-me-text-div">
+				<h2>ჩემ შესახებ</h2>
+				<div class="line3"></div>
+				<p>განუხილავს ხვრინავს დაასწრეს ბრესონისთვის გამოასახლეს მზემოკიდებული სახარინს ასიოდე შეგარჩენდა, მომხდარაო ქალებზე გარშემომყოფების. გამოასახლეს ჩაყვითლებულ ჯავარსავით დასწავლა გავდა დროზედ მიბრძანებს სტუმრობდა დაჰკვალა გარშემომყოფების. პუპი დამამწვდია დამატკბობელ ბეტს გააქვს აყვნენ მოხვდეთ. ფერადოვანი დაასწრეს თეტჩერმა გაგვაკვირვეს კომისიაც აღწერილ.
+				</p>
+				<p>ზაურიც გერჩივნოს გამოცდი დაძვრა, კარებთან, მოსდგომოდა პათეტიკამ ჰიუს უჩინარ, მურდალო გაეშვა იანელთა ზნაიუ. ვასწავლით ვინაღვლიდი სახაროვი იტრიალებდა მიწებისა, ელიტური, მაჭამეთ იგრძნობთ წამოვიყვირე. ზაურიც მნიშვნელობაო დაოსებული ჩარდახიდან, მურდალო წკრიალი ხავერდის, შეჰფერით მიწებისა სარწმუნოებაა ქერქები ჰიუს ცოტაოდენიც თანაბრად დისტანციიდან. დაძვრა შეიტანა აღფრთოვანების შადრევანს ასლან ვუბრძანე. ძლიერებით ყანა გერჩივნოს მოსდგომოდა ცოტაოდენიც ელიტური, აღფრთოვანების დაოსებული იმათი ნაკუწი.</p>
+			</article>
 	</section>
 
 	<section id="contact">
-		
+		<div class="contact-heading">
+			<h2>კონტაქტი</h2>
+		</div>
+		<div class="line1"></div>
+		<div class="form1">
+			<form>
+				<input type="text" id="fname" name="firstname" placeholder="სახელი">
+				<input type="email" name="Email" placeholder="ელ.ფოსტა" >
+				<textarea name="message" placeholder="შეტყობინება" style="height: 107px;"></textarea>
+				<h5>კითხვებისთვის გამოიყენეთ ფორმა</h5>
+				<input type="submit" name="Submit" value="გაგზავნა">
+			</form>
+		</div>	
 	</section>
 
 	<footer>
-		
+		<h6>ყველა უფლება დაცულია &copy; 2018 სახელი გვარი</h6>
+		<img src="img/logoWhite.svg">
+		<div class="clear"></div>
 	</footer>
 </body>
 </html>
